@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Layout, { Content, Header, Footer } from 'antd/es/layout/layout';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import RegistrarIncidente from './components/RegistrarIncidente';
+import RegistrarPrestamo from './components/RegistrarPrestamo';
 
 function App() {
+  const [picked, setPicked] = useState("one")
+
+  const showForm =(str: string) => {
+    setPicked(str)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header>
+      <Navbar showForm={showForm}/>
+      </Header>
+      <Content style={{ padding: '0 50px' }}>
+      {picked === "one" ?
+        <RegistrarPrestamo />
+        :
+        <RegistrarIncidente />
+      }
+
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>Fundación Universitaria Catolica del Norte ©2023</Footer>
+    </Layout>
   );
 }
 
