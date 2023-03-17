@@ -18,15 +18,15 @@ return (
         </Form.Item>
         <Form.Item label="Dispositivo">
         <Select>
-            <Select.Option value="demo">Portatil</Select.Option>
-            <Select.Option value="demo">PC Escritorio</Select.Option>
-            <Select.Option value="demo">Video Beam</Select.Option>
-            <Select.Option value="demo">Televisor</Select.Option>
-            <Select.Option value="demo">Impresora</Select.Option>
-            <Select.Option value="demo">Scanner</Select.Option>
-            <Select.Option value="demo">Sonido</Select.Option>
-            <Select.Option value="demo">Xbox</Select.Option>
-            <Select.Option value="demo">PlayStation</Select.Option>
+            <Select.Option value="portatil">Portatil</Select.Option>
+            <Select.Option value="pc">PC Escritorio</Select.Option>
+            <Select.Option value="videoBean">Video Beam</Select.Option>
+            <Select.Option value="televisor">Televisor</Select.Option>
+            <Select.Option value="impresora">Impresora</Select.Option>
+            <Select.Option value="scanner">Scanner</Select.Option>
+            <Select.Option value="sonido">Sonido</Select.Option>
+            <Select.Option value="xbox">Xbox</Select.Option>
+            <Select.Option value="play">PlayStation</Select.Option>
           </Select>
         </Form.Item>
         <Form.Item label="Dirección">

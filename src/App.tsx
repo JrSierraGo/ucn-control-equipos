@@ -5,7 +5,7 @@ import RegistrarIncidente from './components/RegistrarIncidente';
 import RegistrarPrestamo from './components/RegistrarPrestamo';
 
 function App() {
-  const [picked, setPicked] = useState("one")
+  const [picked, setPicked] = useState("prestamo")
 
   const showForm =(str: string) => {
     setPicked(str)
@@ -17,7 +17,7 @@ function App() {
       <Navbar showForm={showForm}/>
       </Header>
       <Content style={{ padding: '8vh 5vw' }}>
-      {picked === "one" ?
+      {picked === "prestamo" ?
         <RegistrarPrestamo />
         :
         <RegistrarIncidente />
