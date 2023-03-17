@@ -1,10 +1,10 @@
-import { Form, DatePicker, Select, Input } from "antd"
+import { Form, Select } from "antd"
 import Button from "antd/es/button"
 import TextArea from "antd/es/input/TextArea"
 
 const RegistrarIncidente = () =>{
 return(
-    <div>
+    <>
         <Form
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 14 }}
@@ -27,11 +27,11 @@ return(
         <Form.Item label="Descripción">
           <TextArea rows={4} />
         </Form.Item>
-        <Form.Item label="Descripción">
+        <Form.Item>
           <Button type="primary">Enviar</Button>
         </Form.Item>
       </Form>
-    </div>
+    </>
 )
 }
 

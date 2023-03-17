@@ -1,4 +1,4 @@
-import { Checkbox, Form, Radio, Input, Select, TreeSelect, Cascader, DatePicker, InputNumber, Switch, Upload, Button } from "antd"
+import { Form, Input, Select, DatePicker, Button } from "antd"
 import TextArea from "antd/es/input/TextArea"
 
 const RegistrarPrestamo = () =>{

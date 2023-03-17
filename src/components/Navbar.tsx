@@ -1,16 +1,23 @@
-import { Button } from "antd"
+import { Button, Space } from "antd"
 
 interface Props {
     showForm: (form: string) => void
   }
   
-  const Navbar = ({showForm}: Props) => { 
+  const Navbar = ({showForm}: Props) => {
+    
+    const buttonNavbarStyle = {
+        background: "#0c3e6e",
+        borderColor: "#0c3e6e",
+        color: "white"
+    };
+
   
     return(
-      <div>
-        <Button onClick={() => showForm('one')}>Registrar Prestamo</Button>
-        <Button onClick={() => showForm('two')}>Registrar Incidente</Button>
-      </div>
+      <Space size="large">
+        <Button size="large" style={buttonNavbarStyle} onClick={() => showForm('one')}>Registrar Prestamo</Button>
+        <Button size="large" style={buttonNavbarStyle} onClick={() => showForm('two')}>Registrar Incidente</Button>
+      </Space>
     )
    }
   

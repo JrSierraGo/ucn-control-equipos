@@ -16,7 +16,7 @@ function App() {
       <Header>
       <Navbar showForm={showForm}/>
       </Header>
-      <Content style={{ padding: '0 50px' }}>
+      <Content style={{ padding: '8vh 5vw' }}>
       {picked === "one" ?
         <RegistrarPrestamo />
         :
