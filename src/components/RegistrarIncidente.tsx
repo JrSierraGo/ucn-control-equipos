@@ -13,15 +13,8 @@ return(
       >
         <Form.Item label="Dispositivo">
         <Select>
-            <Select.Option value="demo">Portatil</Select.Option>
-            <Select.Option value="demo">PC Escritorio</Select.Option>
-            <Select.Option value="demo">Video Beam</Select.Option>
-            <Select.Option value="demo">Televisor</Select.Option>
-            <Select.Option value="demo">Impresora</Select.Option>
-            <Select.Option value="demo">Scanner</Select.Option>
-            <Select.Option value="demo">Sonido</Select.Option>
-            <Select.Option value="demo">Xbox</Select.Option>
-            <Select.Option value="demo">PlayStation</Select.Option>
+        <Select.Option value="portatil">Portatil</Select.Option>
+            <Select.Option value="impresora">Impresora</Select.Option>
           </Select>
         </Form.Item>
         <Form.Item label="Descripción">

@@ -15,7 +15,7 @@ interface Props {
   
     return(
       <Space size="large">
-        <Button size="large" style={buttonNavbarStyle} onClick={() => showForm('prestamo')}>Registrar Prestamo</Button>
+        <Button size="large" style={buttonNavbarStyle} onClick={() => showForm('prestamo')}>Registrar Préstamo</Button>
         <Button size="large" style={buttonNavbarStyle} onClick={() => showForm('incidente')}>Registrar Incidente</Button>
       </Space>
     )
